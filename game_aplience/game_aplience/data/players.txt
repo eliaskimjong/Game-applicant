@@ -1,0 +1,2 @@
+player name 1: e <X> || player name 2: t <0>
+wins 0 vs wins0
