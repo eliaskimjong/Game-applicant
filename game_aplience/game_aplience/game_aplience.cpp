@@ -123,7 +123,6 @@ int main() {
             cout << "Username: ";
             cin >> guest;
             file.open("data/database.txt");
-            file << DATA; //fix this later
             file << guest;
             username = guest;
             file.close();
@@ -134,12 +133,12 @@ int main() {
         }
 
         // Game selection
-        cout << "Hey " << username << "! Would you like to play tic tac toe or chess?" << endl;
+        cout << "Hey " << username << "! Would you like to play tic tac toe" << endl;
         cout << "(Answer with '1' or '2')" << endl;
         cin >> game;
 
-        if (game == "1") {
-            while (game == "1") {
+        if (game == "yes") {
+            while (game == "yes") {
                 TicTacToe ticTacToeGame;
                 system("CLS");
                 ticTacToeGame.getInput();
